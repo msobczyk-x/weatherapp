@@ -1,11 +1,13 @@
 import React from "react";
 import './weather.css';
 import { Card, CardContent, Typography } from "@mui/material";
+import SearchBar from "./searchbar";
 import moment from 'moment';
 
 
 const CardExampleCard = ({weatherData}) => (
     <Card sx={{maxWidth: 450}}>
+
         <CardContent>
             <Typography variant="h4" component="div">
             City Name: {weatherData.name}
